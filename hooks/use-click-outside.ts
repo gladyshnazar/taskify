@@ -10,6 +10,6 @@ export function useClickOutside(
       if (ref.current === null || ref.current.contains(e.target as Node)) return;
       cb(e);
     },
-    document
+    window
   );
 }
