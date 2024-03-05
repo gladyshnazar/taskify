@@ -1,3 +1,4 @@
+"use client"
 import { Plus } from "lucide-react";
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 

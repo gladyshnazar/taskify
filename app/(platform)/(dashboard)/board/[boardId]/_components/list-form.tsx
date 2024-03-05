@@ -86,7 +86,7 @@ ListForm.Active = function ListFormActive({
     }
   };
 
-  useClickOutside(formRef, disableEditing);
+  // useClickOutside(formRef, disableEditing);
   useEventListener("keydown", onKeyDown);
 
   return (
