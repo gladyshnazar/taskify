@@ -8,7 +8,7 @@ export default authMiddleware({
   publicRoutes: ["/", "/api/webhook"],
   afterAuth(auth, req) {
     if (auth.userId && auth.isPublicRoute) {
-      let path = "select-org";
+      let path = "/select-org";
 
       if (auth.orgId) {
         path = `/organization/${auth.orgId}`;
