@@ -12,7 +12,7 @@ export const Logo = () => {
       <div className='flex hover:opacity-75 transition items-center gap-x-2'>
         <Image src='/logo.svg' alt='Logo' height={30} width={30} />
         <span
-          className={cn("text-lg next-neutral-700 pb-1", headingFont.className)}
+          className={cn("text-2xl next-neutral-700 pb-1", headingFont.className)}
         >
           Taskify
         </span>

@@ -1,5 +1,6 @@
 import { authMiddleware, redirectToSignIn } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
+import { absoluteUrl } from "./lib/utils";
 
 // This example protects all routes including api/trpc routes
 // Please edit this to allow other routes to be public as needed.
@@ -18,7 +19,7 @@ export default authMiddleware({
     }
 
     if (!auth.userId && !auth.isPublicRoute) {
-      return redirectToSignIn({ returnBackUrl: req.url });
+      return redirectToSignIn({ returnBackUrl: absoluteUrl("/") });
     }
 
     if (auth.userId && !auth.orgId && req.nextUrl.pathname !== "/select-org") {

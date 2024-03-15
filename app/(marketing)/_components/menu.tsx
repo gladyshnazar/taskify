@@ -8,11 +8,11 @@ export const Menu = () => {
       <div className='md:max-w-screen-xl mx-auto flex items-center w-full justify-between'>
         <Logo />
         <div className='space-x-4 md:block md:w-auto flex items-center justify-between w-full'>
-          <Button size='sm' variant='outline' asChild>
+          <Button variant='outline' asChild>
             <Link href='/log-in'>Log In</Link>
           </Button>
-          <Button size='sm' asChild>
-            <Link href='/sign-up'>Get Taskify for Free</Link>
+          <Button asChild>
+            <Link href='/sign-up'>Get Taskify free</Link>
           </Button>
         </div>
       </div>
