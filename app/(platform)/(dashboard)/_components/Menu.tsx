@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Plus } from "lucide-react";
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 
@@ -13,7 +13,7 @@ export const Menu = () => {
       <MobileAside />
       <div className='flex items-center gap-x-4'>
         <Logo />
-        <FormPopover align="start" sideOffset={18}>
+        <FormPopover align='start' sideOffset={18}>
           <Button
             size='sm'
             variant='primary'
@@ -41,6 +41,7 @@ export const Menu = () => {
           }}
         />
         <UserButton
+          afterSignOutUrl='/'
           appearance={{
             elements: {
               avatarBox: {
